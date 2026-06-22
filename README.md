@@ -62,15 +62,9 @@ New recommendations are filtered in two stages. First, the app removes anything 
 - `Double-check zero plays`: confirms new recommendations against Last.fm playcounts. This is slower but stricter.
 - `Save a CSV copy`: writes the results into the `exports/` folder.
 
-## Testing
+## Example Output
 
-Run the test suite with Python:
-
-```text
-python -m unittest discover -s tests
-```
-
-The tests cover name normalisation, recommendation filtering, category balancing, user-playcount verification, artist diversity, and CSV/JSON export.
+![Scrobble Recall terminal output](tests/Example_Output.PNG)
 
 ## Limitations
 

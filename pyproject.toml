@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scrobble-recall"
+version = "0.1.0"
+description = "A Last.fm listening-history analyser for rediscovery and zero-play music recommendations."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "George" }
+]
+license = { text = "MIT" }
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lastfm_recommender*"]
